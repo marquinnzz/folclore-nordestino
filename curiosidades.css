@@ -1,0 +1,95 @@
+body {
+      background: #fff8dc;
+      font-family: 'Comic Sans MS';
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #00758a;
+      padding: 20px 10px;
+      text-align: center;
+      border-bottom: 5px dashed #000000;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin: 0;
+      color: #ffffff;
+    }
+
+    form {
+      background-color: #044761;
+      padding: 25px;
+      border-radius: 10px;
+      max-width: 500px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: rgb(0, 44, 109);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: rgb(196, 196, 196);
+    }
+
+     .botao-voltar {
+      background-color: rgb(255, 255, 255);
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .botao-voltar:hover {
+      background-color: rgb(196, 196, 196);
+    }
+    footer {
+      background-color: #ffcc00;
+      text-align: center;
+      padding: 20px 10px;
+      border-top: 5px dashed #d2691e;
+    }
+    nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
