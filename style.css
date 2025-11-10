@@ -6,9 +6,10 @@
 }
 
 body {
-  background: #fffaf2;
+  background: #fff8ee url('https://www.transparenttextures.com/patterns/paper-fibers.png');
   color: #222;
   line-height: 1.6;
+  background-attachment: fixed;
 }
 
 header {
@@ -16,6 +17,22 @@ header {
   color: white;
   text-align: center;
   padding: 2rem 1rem;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/d4/Nordeste_do_Brasil_Cultura.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+header h1, header p, header nav {
+  position: relative;
+  z-index: 2;
 }
 
 header h1 {
@@ -23,12 +40,16 @@ header h1 {
   margin-bottom: 0.5rem;
 }
 
+header p {
+  font-size: 1rem;
+}
+
 header nav {
   margin-top: 1rem;
 }
 
 header nav a {
-  color: white;
+  color: #fff;
   text-decoration: none;
   margin: 0 10px;
   font-weight: bold;
@@ -64,13 +85,29 @@ h2 {
   background: white;
   border: 1px solid #ddd;
   border-radius: 10px;
-  padding: 1rem;
+  overflow: hidden;
   box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-  transition: 0.3s;
+  transition: transform 0.3s ease;
 }
 
 .card:hover {
   transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.card h3 {
+  color: #f39c12;
+  margin-top: 10px;
+  padding-left: 1rem;
+}
+
+.card p {
+  padding: 0.5rem 1rem 1rem 1rem;
 }
 
 ul {
